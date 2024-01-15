@@ -8,7 +8,7 @@ int main(){
 	float total_compra, dto, reintegro, precio;
 	
 	printf("Ingrese: \n");
-	printf("Toral de compra: $ ");
+	printf("Total de compra: $ ");
 	scanf("%f", &total_compra);
 	printf("Descuento: ");
 	scanf("%f", &dto);
