@@ -12,3 +12,4 @@
 - 009 (12/01): Operadores. Ejercicio propuesto: (d) Calcule la media aritmetica de 3 nros. cualesquiera
 - 010 (13/01): Operadores. Ejercicio descuento en una tienda (e) Una tienda ofrece descuentos sobre el total de la compra, determinar el pago final y el reintegro.
 - 011 (15/01): Operadores. Ejercicio propuesto. (f) Dadas las horas trabajadas y su valor por hora, calcular su salario e imprimirlo.
+- 012 (16/01): Operadores. Ejercicio aumento de sueldo. (g) Calcular el nuevo salario luego de un aumento sobre el anterior. Porcentaje variable.
