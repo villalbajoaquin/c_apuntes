@@ -15,6 +15,7 @@
 - 012 (16/01): Operadores. Ejercicio aumento de sueldo. (g) Calcular el nuevo salario luego de un aumento sobre el anterior. Porcentaje variable.
 - 013 (17/01): Operadores. Ejercicio propuesto. (h) Calcular la nota final en la materia compuesta de las siguentes: 55%, del promedio de los tres parciales, 30% del examen final y un 15% del TPI.
 - 014 (18/01): Operadores. Ejercicio calculando cantidad de segundos. (i) Calcular la cantidad de seg. que estan incluidos en el numero de horas, minutos y segundos ingresados por el usuario.
+- 015 (19/01): Operadores. Ejercicio propuesto. (j) Hacer un programa que obtenga la media geometrica de tres numeros ingresados por el usuario.
 
 * * *
 Este en un repositorio de [Joaquín Villalba](https://github.com/villalbajoaquin).
