@@ -17,6 +17,7 @@
 - 014 (18/01): Operadores. Ejercicio calculando cantidad de segundos. (i) Calcular la cantidad de seg. que estan incluidos en el numero de horas, minutos y segundos ingresados por el usuario.
 - 015 (19/01): Operadores. Ejercicio propuesto. (j) Hacer un programa que obtenga la media geometrica de tres numeros ingresados por el usuario.
 - 016 (20/01): Condicionales. La sentencia if: prueba de divisibilidad.
+- 017 (22/01): Condicionales. Ejercicio: (a) Comprobar si un alumno esta aprobado.
 
 * * *
 Este en un repositorio de [Joaquín Villalba](https://github.com/villalbajoaquin).
