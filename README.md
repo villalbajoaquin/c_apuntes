@@ -18,6 +18,7 @@
 - 015 (19/01): Operadores. Ejercicio propuesto. (j) Hacer un programa que obtenga la media geometrica de tres numeros ingresados por el usuario.
 - 016 (20/01): Condicionales. La sentencia if: prueba de divisibilidad.
 - 017 (22/01): Condicionales. Ejercicio: (a) Comprobar si un alumno esta aprobado.
+- 018 (23/01): Condicionales. Ejercicio propuesto: (b) Comprobar si el numero ingresado es positivo o negativo.
 
 * * *
 Este en un repositorio de [Joaquín Villalba](https://github.com/villalbajoaquin).
