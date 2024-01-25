@@ -20,6 +20,7 @@
 - 017 (22/01): Condicionales. Ejercicio: (a) Comprobar si un alumno esta aprobado.
 - 018 (23/01): Condicionales. Ejercicio propuesto: (b) Comprobar si el numero ingresado es positivo o negativo.
 - 019 (24/01): Condicionales. Ejercicio tarifa electrica: (c) Calcular la tarifa de luz segun su consumo.
+- 020 (25/01): Condicionales. Ejercicio propuesto: (d) Determinar si un numero es par o impar.
 
 * * *
 Este en un repositorio de [Joaquín Villalba](https://github.com/villalbajoaquin).
