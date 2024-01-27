@@ -22,6 +22,7 @@
 - 019 (24/01): Condicionales. Ejercicio tarifa electrica: (c) Calcular la tarifa de luz segun su consumo.
 - 020 (25/01): Condicionales. Ejercicio propuesto: (d) Determinar si un numero es par o impar.
 - 021 (26/01): Condicionales. Seleccion doble if-else: nota del estudiante.
+- 022 (27/01): Condicionales. Ejercicio: (e) Comprobar el mayor de dos numeros ingresados y visualizarlo en pantalla.
 
 * * *
 Este en un repositorio de [Joaquín Villalba](https://github.com/villalbajoaquin).
