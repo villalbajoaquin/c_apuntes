@@ -23,6 +23,7 @@
 - 020 (25/01): Condicionales. Ejercicio propuesto: (d) Determinar si un numero es par o impar.
 - 021 (26/01): Condicionales. Seleccion doble if-else: nota del estudiante.
 - 022 (27/01): Condicionales. Ejercicio: (e) Comprobar el mayor de dos numeros ingresados y visualizarlo en pantalla.
+- 023 (29/01): Condicionales. Ejercicio propuesto: (f) Ingrese un numero y calcule su raiz cuadrada, si el numero es negativo imprimalo junto a un mensaje de 'tiene raiz imaginaria'.
 
 * * *
 Este en un repositorio de [Joaquín Villalba](https://github.com/villalbajoaquin).
