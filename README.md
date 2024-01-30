@@ -24,6 +24,7 @@
 - 021 (26/01): Condicionales. Seleccion doble if-else: nota del estudiante.
 - 022 (27/01): Condicionales. Ejercicio: (e) Comprobar el mayor de dos numeros ingresados y visualizarlo en pantalla.
 - 023 (29/01): Condicionales. Ejercicio propuesto: (f) Ingrese un numero y calcule su raiz cuadrada, si el numero es negativo imprimalo junto a un mensaje de 'tiene raiz imaginaria'.
+- 024 (30/01): Condicionales. Ejercicio: (g) Ingrese el nombre y signo de la persona e imprima, su nombre solo si es de aries, caso contrario imprima 'no es de aries'.
 
 * * *
 Este en un repositorio de [Joaquín Villalba](https://github.com/villalbajoaquin).
