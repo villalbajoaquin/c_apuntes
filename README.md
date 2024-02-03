@@ -28,6 +28,7 @@
 - 025 (31/01): Condicionales. Ejercicio propuesto: (h) Ingrese el nombre, edad y sexo de la persona e imprima, solo si es masculino y mayor de edad, su nombre.
 - 026 (01/02): Condicionales. Ejercicio: (i) Hacer un programa que borre la pantalla al pulsar 1.
 - 027 (02/02): Condicionales. La sentencia switch.
+- 028 (03/02): Condicionales. Ejercicio: (j) Dada una nota de examen, devuelva la descripcion correspondiente.
 
 * * *
 Este en un repositorio de [Joaquín Villalba](https://github.com/villalbajoaquin).
