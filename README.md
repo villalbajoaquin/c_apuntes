@@ -29,6 +29,7 @@
 - 026 (01/02): Condicionales. Ejercicio: (i) Hacer un programa que borre la pantalla al pulsar 1.
 - 027 (02/02): Condicionales. La sentencia switch.
 - 028 (03/02): Condicionales. Ejercicio: (j) Dada una nota de examen, devuelva la descripcion correspondiente.
+- 029 (05/02): Condicionales. Ejercicio propuesto: (k) Seleccionar un tipo de vehiculo e indicar el peaje segun su numero.
 
 * * *
-Este en un repositorio de [Joaquín Villalba](https://github.com/villalbajoaquin).
+Este es un repositorio de [Joaquín Villalba](https://github.com/villalbajoaquin).
