@@ -32,6 +32,7 @@
 - 029 (05/02): Condicionales. Ejercicio propuesto: (k) Seleccionar un tipo de vehiculo e indicar el peaje segun su numero.
 - 030 (06/02): Condicionales. Ejercicio: (l) Cambiar el formato de un numero entero a romano.
 - 031 (07/02): Condicionales. Ejercicio propuesto: (m) Mostrar los meses del calendario, pidiendole al usuario el numero correspondiente (1 a 12).
+- 032 (08/02): Condicionales. Ejercicio: (n) Hacer un programa que simule un menu de cajero automatico, con un saldo inicial de U$S1000.
 
 * * *
 Este es un repositorio de [Joaquín Villalba](https://github.com/villalbajoaquin).
