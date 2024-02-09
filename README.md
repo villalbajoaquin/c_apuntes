@@ -33,6 +33,7 @@
 - 030 (06/02): Condicionales. Ejercicio: (l) Cambiar el formato de un numero entero a romano.
 - 031 (07/02): Condicionales. Ejercicio propuesto: (m) Mostrar los meses del calendario, pidiendole al usuario el numero correspondiente (1 a 12).
 - 032 (08/02): Condicionales. Ejercicio: (n) Hacer un programa que simule un menu de cajero automatico, con un saldo inicial de U$S1000.
+- 033 (09/02): Condicionales. Ejercicio propuesto: (o) Hacer un menu que considere las siguientes opciones:	cubo de un numero, si es par o impar, o salir.
 
 * * *
 Este es un repositorio de [Joaquín Villalba](https://github.com/villalbajoaquin).
