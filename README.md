@@ -34,6 +34,7 @@
 - 031 (07/02): Condicionales. Ejercicio propuesto: (m) Mostrar los meses del calendario, pidiendole al usuario el numero correspondiente (1 a 12).
 - 032 (08/02): Condicionales. Ejercicio: (n) Hacer un programa que simule un menu de cajero automatico, con un saldo inicial de U$S1000.
 - 033 (09/02): Condicionales. Ejercicio propuesto: (o) Hacer un menu que considere las siguientes opciones:	cubo de un numero, si es par o impar, o salir.
+- 034 (10/02): Condicionales. El operador '?' (if-ternario).
 
 * * *
 Este es un repositorio de [Joaquín Villalba](https://github.com/villalbajoaquin).
