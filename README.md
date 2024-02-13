@@ -36,6 +36,7 @@
 - 033 (09/02): Condicionales. Ejercicio propuesto: (o) Hacer un menu que considere las siguientes opciones:	cubo de un numero, si es par o impar, o salir.
 - 034 (10/02): Condicionales. El operador '?' (if-ternario).
 - 035 (12/02): Ciclos/Bucles. La sentencia while.
+- 036 (13/02): Ciclos/Bucles. Ejercicio: (a) Suma de los n primeros numeros.
 
 * * *
 Este es un repositorio de [Joaquín Villalba](https://github.com/villalbajoaquin).
