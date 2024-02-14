@@ -37,6 +37,7 @@
 - 034 (10/02): Condicionales. El operador '?' (if-ternario).
 - 035 (12/02): Ciclos/Bucles. La sentencia while.
 - 036 (13/02): Ciclos/Bucles. Ejercicio: (a) Suma de los n primeros numeros.
+- 037 (14/02): Ciclos/Bucles. Ejercicio propuesto: (b) Ingrese un numero, si el numero supera a 10, multiplique los 10 primeros numeros, sino, sumelos.
 
 * * *
 Este es un repositorio de [Joaquín Villalba](https://github.com/villalbajoaquin).
