@@ -39,7 +39,8 @@
 - 036 (13/02): Ciclos/Bucles. Ejercicio: (a) Suma de los n primeros numeros.
 - 037 (14/02): Ciclos/Bucles. Ejercicio propuesto: (b) Ingrese un numero, si el numero supera a 10, multiplique los 10 primeros numeros, sino, sumelos.
 - 038 (15/02): Ciclos/Bucles. Ejercicio: (c) Multiplos de 3, desde 1 hasta n.
-- 039 (16/02): 31. Ciclos/Bucles. Ejercicio propuesto: (d) Multiplos de 5, desde 1 hasta n.
+- 039 (16/02): Ciclos/Bucles. Ejercicio propuesto: (d) Multiplos de 5, desde 1 hasta n.
+- 040 (17/10): Ciclos/Bucles. Ejercicio: (e) Sumar 1-2+3-4+5...n.
 
 * * *
 Este es un repositorio de [Joaquín Villalba](https://github.com/villalbajoaquin).
