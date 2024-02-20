@@ -40,8 +40,9 @@
 - 037 (14/02): Ciclos/Bucles. Ejercicio propuesto: (b) Ingrese un numero, si el numero supera a 10, multiplique los 10 primeros numeros, sino, sumelos.
 - 038 (15/02): Ciclos/Bucles. Ejercicio: (c) Multiplos de 3, desde 1 hasta n.
 - 039 (16/02): Ciclos/Bucles. Ejercicio propuesto: (d) Multiplos de 5, desde 1 hasta n.
-- 040 (17/10): Ciclos/Bucles. Ejercicio: (e) Sumar 1-2+3-4+5...n.
-- 041 (19/10): Ciclos/Bucles. Ejercicio propuesto: (f) Sumar pares desde n hasta m.
+- 040 (17/02): Ciclos/Bucles. Ejercicio: (e) Sumar 1-2+3-4+5...n.
+- 041 (19/02): Ciclos/Bucles. Ejercicio propuesto: (f) Sumar pares desde n hasta m.
+- 042 (20/02): Ciclos/Bucles. El bucle for.
 
 * * *
 Este es un repositorio de [Joaquín Villalba](https://github.com/villalbajoaquin).
