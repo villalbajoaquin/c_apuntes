@@ -43,6 +43,7 @@
 - 040 (17/02): Ciclos/Bucles. Ejercicio: (e) Sumar 1-2+3-4+5...n.
 - 041 (19/02): Ciclos/Bucles. Ejercicio propuesto: (f) Sumar pares desde n hasta m.
 - 042 (20/02): Ciclos/Bucles. El bucle for.
+- 043 (21/02): Ciclos/Bucles. Ejercicio: (g) Suma de los primeros 10 numeros pares.
 
 * * *
 Este es un repositorio de [Joaquín Villalba](https://github.com/villalbajoaquin).
