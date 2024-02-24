@@ -46,6 +46,7 @@
 - 043 (21/02): Ciclos/Bucles. Ejercicio: (g) Suma de los primeros 10 numeros pares.
 - 044 (22/02): Ciclos/Bucles. Ejercicio propuesto: (h) Hacer un arbol con '*'.
 - 045 (23/02): Ciclos/Bucles. Ejercicio: (i) Determinar si un numero es primo o no.
+- 046 (24/02): Ciclos/Bucles. Ejercicio: (j) Factorial de un numero.
 
 * * *
 Este es un repositorio de [Joaquín Villalba](https://github.com/villalbajoaquin).
