@@ -48,6 +48,7 @@
 - 045 (23/02): Ciclos/Bucles. Ejercicio: (i) Determinar si un numero es primo o no.
 - 046 (24/02): Ciclos/Bucles. Ejercicio: (j) Factorial de un numero.
 - 047 (26/02): Ciclos/Bucles. Ejercicio propuesto: (k) Calcular la suma de factoriales.
+- 048 (27/02): Ciclos/Bucles. Ejercicio: (l) Serie Fibonacci.
 
 * * *
 Este es un repositorio de [Joaquín Villalba](https://github.com/villalbajoaquin).
