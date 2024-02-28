@@ -49,6 +49,7 @@
 - 046 (24/02): Ciclos/Bucles. Ejercicio: (j) Factorial de un numero.
 - 047 (26/02): Ciclos/Bucles. Ejercicio propuesto: (k) Calcular la suma de factoriales.
 - 048 (27/02): Ciclos/Bucles. Ejercicio: (l) Serie Fibonacci.
+- 049 (28/02): Ciclos/Bucles. Ejercicio propuesto: (m) Imprimir la suma de todos los numeros pares que hay desde el 1 hasta n, y diga cuantos numeros hay.
 
 * * *
 Este es un repositorio de [Joaquín Villalba](https://github.com/villalbajoaquin).
