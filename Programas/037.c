@@ -5,7 +5,7 @@
 #include<stdio.h>
 
 int main(){
-	int i = 1, n, res;
+	int i = 1, n, res = 1;
 	
 	printf("Ingrese un numero, si el numero supera a 10, multiplica\n");
 	printf("los 10 primeros numeros, sino, los suma: ");

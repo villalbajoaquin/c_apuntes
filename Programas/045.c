@@ -4,13 +4,13 @@
 #include<stdio.h>
 
 int main(){
-	int i = 1, n, cont = 0;
+	int i, n, cont = 0;
 	
 	printf("i) Determinar si un numero es primo o no.\n");
 	printf("Ingrese el numero: ");
 	scanf("%i", &n);
 	
-	for(i; i <= n; i++){
+	for(i = 1; i <= n; i++){
 		if(n % i == 0){
 			cont++;
 		};

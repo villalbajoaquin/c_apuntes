@@ -5,7 +5,7 @@
 #include<stdio.h>
 
 int main(){
-	int n, i, pares = 0, total, suma = 0;
+	int n, i, pares = 0, suma = 0;
 	
 	printf("Ingrese el numero limite de la suma: ");
 	scanf("%i", &n);

@@ -16,7 +16,7 @@ int main(){
 		i++; // Incremento de a uno.
 	};
 	
-	printf("------\n", i);
+	printf("------\n");
 	
 	// Ej: 10 al 1.
 	i = 10;
@@ -26,7 +26,7 @@ int main(){
 		i--; // Decremento de a uno.
 	};
 	
-	printf("------\n", i);
+	printf("------\n");
 	
 	// Ej: 5 arsteriscos '*'.
 	i = 1;

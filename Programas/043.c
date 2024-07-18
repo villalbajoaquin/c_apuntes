@@ -4,9 +4,9 @@
 #include<stdio.h>
 
 int main(){
-	int i = 0, suma = 0;
+	int i, suma = 0;
 	
-	for(i; i <= 10; i += 2){
+	for (i=0; i <= 10; i += 2){
 		suma += i;
 	};
 	

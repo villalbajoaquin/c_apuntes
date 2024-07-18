@@ -11,12 +11,12 @@
 #include<stdio.h>
 
 int main(){
-	int i = 1, j, n;
+	int i, j, n;
 	
 	printf("Ingrese el numero de filas: ");
 	scanf("%i", &n);
 	
-	for(i; i <= n; i++){
+	for(i = 1; i <= n; i++){
 		for(j = 1; j <= i; j++){
 			printf("*");
 		};
