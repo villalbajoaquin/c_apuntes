@@ -16,7 +16,11 @@ int main(){
     scanf("%f", &pph);
 
     sBruto = hs * pph;
-    printf("La suma de %.2f + %.2f = %.2f", n1, n2, suma);
+    aportes = sBruto * 0.10;
+    sNeto = sBruto - aportes;
+    printf("Sueldo Bruto: %.2f\n", sBruto);
+    printf("Descuento en concepto de Aportes: %.2f\n", aportes);
+    printf("Sueldo Neto: %.2f\n", sNeto);
     
     return 0;
 }
