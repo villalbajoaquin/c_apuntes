@@ -36,7 +36,7 @@ void carga(int *v){
     int i;
 
     for(i = 0; i < 8; i++){
-        v[i]= rand() % 8;
+        v[i]= rand() % (1-0+1) + 0;
     }
 }
 
