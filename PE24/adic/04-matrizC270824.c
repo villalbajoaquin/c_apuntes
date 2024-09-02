@@ -11,7 +11,7 @@ void imprimoM(int *, int, int);
 void cambio(int *, int, int);
 
 int main(){
-	int m[6][10], i, *p;
+	int m[6][10], *p;
 	p = &m[0][0];
 	
 	cargaM(p, 6, 10);
