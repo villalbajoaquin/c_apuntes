@@ -29,14 +29,7 @@ int main(){
 		}
 		
 		printf("\nIngrese la cantidad de miembros de su familia (0 para salir): ");
-		scanf("%d", &miembros);
-			
-		if(miembros > 2){
-			printf("Ingrese el valor del monto base: $ ");
-			scanf("%f", &monto);
-		} else {
-			printf("\nNo se considera grupo familiar.");
-		}	
+		scanf("%d", &miembros);	
 	}
 		
 	printf("\nMuchas gracias.");
