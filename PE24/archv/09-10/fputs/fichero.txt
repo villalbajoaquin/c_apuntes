@@ -1,0 +1,13 @@
+Usando fputs
+Paso 1:
+Paso 2:
+Paso 3:
+Paso 4: escribe continuo
+Paso 5: Hola 
+Paso 7:
+Paso 8:
+Paso 9:
+Paso 10:
+Paso 11:
+Paso 12:
+Paso 13:

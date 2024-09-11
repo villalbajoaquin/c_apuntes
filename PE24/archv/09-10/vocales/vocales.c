@@ -1,0 +1,21 @@
+// Programa que lea un texto guardado en un archivo e informe la cantidad de vocales almacenados en el.
+
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+	FILE *fp;
+	fflush(stdin);
+	gets(cad);
+	//fgets(cad, 199, stdin);
+	
+	if((fp = fopen("fichero.txt", "a")) != NULL){
+		fprintf(fp, "\n%s", cad);
+		fclose(fp);
+		printf("Agregado!");
+	} else {
+		printf("Error al agregar.");
+	}
+	
+	return 0;
+}
