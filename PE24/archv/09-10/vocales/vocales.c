@@ -5,6 +5,7 @@
 
 int main(){
 	FILE *fp;
+	char cad[200];
 	fflush(stdin);
 	gets(cad);
 	//fgets(cad, 199, stdin);
