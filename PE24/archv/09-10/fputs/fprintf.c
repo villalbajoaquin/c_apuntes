@@ -8,7 +8,7 @@ int main(){
 	gets(cad);
 	//fgets(cad, 199, stdin);
 	
-	if((fp = fopen("fichero.txt", "a")) != NULL){
+	if((fp = fopen("../fichero.txt", "a")) != NULL){
 		fprintf(fp, "\n%s", cad);
 		fclose(fp);
 		printf("Agregado!");

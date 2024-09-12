@@ -2,21 +2,35 @@
 // de vocales almacenados en el.
 
 #include <stdio.h>
-#include <string.h>
 
 int main(){
 	FILE *fp;
-	char cad[200];
-	fflush(stdin);
-	gets(cad);
-	//fgets(cad, 199, stdin);
+	char c;
+	int vocales = 0;
+
+	fp = fopen("../vocales.txt", "r");
 	
-	if((fp = fopen("fichero.txt", "a")) != NULL){
-		fprintf(fp, "\n%s", cad);
+	if(fp != NULL){
+		while((c = fgetc(fp)) != EOF){
+			printf("%c", c);
+
+			switch (c){
+				case 'a':
+				case 'e':
+				case 'i':
+				case 'o':
+				case 'u':
+				case 'A':
+				case 'E':
+				case 'I':
+				case 'O':
+				case 'U': vocales++; break;
+			}
+		}
 		fclose(fp);
-		printf("Agregado!");
+		printf("Cantidad de vocales encontradas en el archivo de texto: %d", vocales);
 	} else {
-		printf("Error al agregar.");
+		printf("No existe el archivo.");
 	}
 	
 	return 0;

@@ -9,7 +9,7 @@ int main(){
 	
 	strcat(cad, "\n");
 	
-	if((fp = fopen("fichero.txt", "a")) != NULL){
+	if((fp = fopen("../fichero.txt", "a")) != NULL){
 		fputs(cad, fp);
 		fclose(fp);
 		printf("Agregado!");
