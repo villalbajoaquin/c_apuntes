@@ -1,4 +1,5 @@
-// Programa que lea un texto guardado en un archivo e informe la cantidad de vocales almacenados en el.
+// Programa que lea un texto guardado en un archivo e informe la cantidad
+// de vocales almacenados en el.
 
 #include <stdio.h>
 #include <string.h>
