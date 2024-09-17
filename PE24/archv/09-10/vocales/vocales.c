@@ -11,7 +11,7 @@ int main(){
 	fp = fopen("../vocales.txt", "r");
 	
 	if(fp != NULL){
-		while((c = fgetc(fp)) != EOF){
+		while(fscanf(fp, "%c", &c) != EOF){
 			printf("%c", c);
 
 			switch (c){
@@ -28,7 +28,7 @@ int main(){
 			}
 		}
 		fclose(fp);
-		printf("Cantidad de vocales encontradas en el archivo de texto: %d", vocales);
+		printf("\nCantidad de vocales encontradas en el archivo de texto: %d", vocales);
 	} else {
 		printf("No existe el archivo.");
 	}
