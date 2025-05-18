@@ -7,19 +7,23 @@ struct Lista
     struct Lista *sgte;
 };
 
-void insertarL(int v, struct Lista **iniL, int asc);
+struct Lista *nodoL(int v);
+void insertarL(struct Lista **nv, struct Lista **iniL, int asc);
 struct Lista *buscarAnt(int dato, struct Lista *rc, int asc);
 void recorrerL(struct Lista *iniL);
 void buscarL(int v, struct Lista *rc);
 void borrarL(int v, struct Lista **iniL);
 void buscarBorrar(int v, struct Lista **rc, struct Lista **ant);
 struct Lista *borrarLista(struct Lista *iniL);
+// --- RECURSIVAS ---
+struct Lista *insertarLL(struct Lista *nv, struct Lista *iniL, int asc);
+void recorrerLL(struct Lista *iniL);
 
 int main()
 {
     int op, v = 0, asc;
 
-    struct Lista *lista = NULL;
+    struct Lista *lista = NULL, *nodo = NULL;
 
     do
     {
@@ -40,6 +44,9 @@ int main()
         printf("\n3) Buscar un nodo en la lista.");
         printf("\n4) Borrar un nodo de la lista.");
         printf("\n5) Borrar completamente la lista.");
+        printf("\n---------------------------------");
+        printf("\n6) RECURSIVA: Insertar un nodo a la lista.");
+        printf("\n7) RECURSIVA: Recorrer la lista.");
         printf("\n\n0) Salir: finaliza el programa.\n");
         printf("\n\nIngrese una opcion: ");
         scanf("%d", &op);
@@ -56,8 +63,10 @@ int main()
                     printf("\nIngrese el valor a insertar (0 para salir) ---> ");
                     scanf("%d", &v);
 
+                    nodo = nodoL(v);
+
                     if(v != 0){
-                        insertarL(v, &lista, asc);
+                        insertarL(&nodo, &lista, asc);
                     } else {
                         printf("\nCarga de elementos finalizada.\n");
                     }
@@ -87,6 +96,7 @@ int main()
                 } while(v != 0);
 
                 break;
+
             case 4:
                 printf("\n4) Borrar un nodo de la lista.\n");
 
@@ -103,22 +113,54 @@ int main()
                 } while (v != 0);   
                 
                 break;
-                case 5:
-                    printf("\n5) Borrar completamente la lista.\n");
-                    printf("\nDesea eliminar todos los elementos de la lista?");
-                    printf("\n(0 para salir) ---> ");
+
+            case 5:
+                printf("\n5) Borrar completamente la lista.\n");
+                printf("\nDesea eliminar todos los elementos de la lista?");
+                printf("\n(0 para salir) ---> ");
+                scanf("%d", &v);
+
+                if(v != 0){
+                    printf("\nBorrando elementos de la lista...\n");
+                    lista = borrarLista(lista);
+                    system("pause");
+                    printf("\nLista vaciada exitosamente.\n");
+                } else {
+                    printf("\nOperacion cancelada.\n");
+                }
+                
+                break;
+            
+            case 6:
+                printf("\n6) RECURSIVA: Insertar un nodo a la lista.\n");
+
+                do
+                {
+                    printf("\nIngrese el valor a insertar (0 para salir) ---> ");
                     scanf("%d", &v);
 
+                    nodo = nodoL(v);
+
                     if(v != 0){
-                        printf("\nBorrando elementos de la lista...\n");
-                        lista = borrarLista(lista);
-                        system("pause");
-                        printf("\nLista vaciada exitosamente.\n");
+                        lista = insertarLL(nodo, lista, asc);
                     } else {
-                        printf("\nOperacion cancelada.\n");
+                        printf("\nCarga de elementos finalizada.\n");
                     }
-                    
-                    break;
+                } while (v != 0);
+
+                break;
+            
+            case 7:
+                printf("\n7) RECURSIVA: Recorrer la lista.\n");
+
+                if(lista != NULL){
+                    printf("\n- LISTA -\n");
+                    printf("\nElementos:\n");
+                    recorrerLL(lista);
+                } else {
+                    printf("\n- LISTA VACIA -\n");
+                }
+                break;
 
             default: printf("\nError: numero de opcion no valida, ingrese nuevamente.\n");
         }
@@ -130,20 +172,30 @@ int main()
     return 0;
 }
 
-void insertarL(int v, struct Lista **iniL, int asc)
+struct Lista *nodoL(int v){
+    struct Lista *nodo = (struct Lista *)malloc(sizeof(struct Lista));
+    if(nodo != NULL){
+        nodo->valor = v;
+        nodo->sgte = NULL;
+    } else {
+        printf("\nERROR al crear el nodo.\n");
+    }
+    
+    return(nodo);
+}
+
+void insertarL(struct Lista **nv, struct Lista **iniL, int asc)
 {
-    struct Lista *ant, *nodo = (struct Lista *)malloc(sizeof(struct Lista));
+    struct Lista *ant;
 
-    ant = buscarAnt(v, *iniL, asc);
-
-    nodo->valor = v;
+    ant = buscarAnt((*nv)->valor, *iniL, asc);
     
     if(ant != NULL){
-        nodo->sgte = ant->sgte;
-        ant->sgte = nodo;
+        (*nv)->sgte = ant->sgte;
+        ant->sgte = *nv;
     } else {
-        nodo->sgte = *iniL;
-        *iniL = nodo;
+        (*nv)->sgte = *iniL;
+        *iniL = *nv;
     }
 }
 
@@ -164,6 +216,23 @@ struct Lista *buscarAnt(int dato, struct Lista *rc, int asc)
     return(ant);
 }
 
+// recursiva
+struct Lista *insertarLL(struct Lista *nv, struct Lista *iniL, int asc)
+{
+    if(iniL != NULL){
+        if((nv->valor < iniL->valor && asc == 1) || (nv->valor > iniL->valor && asc == 0)){
+            nv->sgte = iniL;
+            iniL = nv;
+        } else {
+            iniL->sgte = insertarLL(nv, iniL->sgte, asc);
+        }
+    } else {
+        iniL = nv;
+    }
+
+    return(iniL);
+}
+
 void recorrerL(struct Lista *iniL)
 {
     if(iniL == NULL){
@@ -177,6 +246,15 @@ void recorrerL(struct Lista *iniL)
             printf("%d\n", iniL->valor);
             iniL = iniL->sgte;
         };
+    }
+}
+
+// recursiva
+void recorrerLL(struct Lista *iniL)
+{
+    if(iniL != NULL){
+        printf("%d\n", iniL->valor);
+        recorrerLL(iniL->sgte);
     }
 }
 
