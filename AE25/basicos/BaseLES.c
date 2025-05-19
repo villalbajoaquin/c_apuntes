@@ -18,6 +18,8 @@ struct Lista *borrarLista(struct Lista *iniL);
 // --- RECURSIVAS ---
 struct Lista *insertarLL(struct Lista *nv, struct Lista *iniL, int asc);
 void recorrerLL(struct Lista *iniL);
+struct Lista *borrarLL(int v, struct Lista *iniL);
+struct Lista *borrarListaL(struct Lista *iniL);
 
 int main()
 {
@@ -47,6 +49,8 @@ int main()
         printf("\n---------------------------------");
         printf("\n6) RECURSIVA: Insertar un nodo a la lista.");
         printf("\n7) RECURSIVA: Recorrer la lista.");
+        printf("\n8) RECURSIVA: Borrar un nodo de la lista.");
+        printf("\n9) RECURSIVA: Borrar completamente la lista.");
         printf("\n\n0) Salir: finaliza el programa.\n");
         printf("\n\nIngrese una opcion: ");
         scanf("%d", &op);
@@ -161,6 +165,39 @@ int main()
                     printf("\n- LISTA VACIA -\n");
                 }
                 break;
+            
+            case 8:
+                printf("\n8) RECURSIVA: Borrar un nodo de la lista.\n");
+
+                do
+                {
+                    printf("\nIngrese el valor a buscar (0 para salir) ---> ");
+                    scanf("%d", &v);
+
+                    if(v != 0){
+                        lista = borrarLL(v, lista);
+                    } else {
+                        printf("\nBorrado de elementos finalizada.\n");
+                    }
+                } while (v != 0);
+                break;
+            
+            case 9:
+                printf("\n9) RECURSIVA: Borrar completamente la lista.\n");
+
+                printf("\nDesea eliminar todos los elementos de la lista?");
+                printf("\n(0 para salir) ---> ");
+                scanf("%d", &v);
+
+                if(v != 0){
+                    printf("\nBorrando elementos de la lista...\n");
+                    lista = borrarListaL(lista);
+                    system("pause");
+                    printf("\nLista vaciada exitosamente.\n");
+                } else {
+                    printf("\nOperacion cancelada.\n");
+                }
+                break;
 
             default: printf("\nError: numero de opcion no valida, ingrese nuevamente.\n");
         }
@@ -220,7 +257,7 @@ struct Lista *buscarAnt(int dato, struct Lista *rc, int asc)
 struct Lista *insertarLL(struct Lista *nv, struct Lista *iniL, int asc)
 {
     if(iniL != NULL){
-        if((nv->valor < iniL->valor && asc == 1) || (nv->valor > iniL->valor && asc == 0)){
+        if(((nv->valor < iniL->valor) && asc == 1) || ((nv->valor > iniL->valor) && asc == 0)){
             nv->sgte = iniL;
             iniL = nv;
         } else {
@@ -312,6 +349,28 @@ void buscarBorrar(int v, struct Lista **rc, struct Lista **ant)
     }
 }
 
+// recursiva
+struct Lista *borrarLL(int v, struct Lista *iniL)
+{
+    struct Lista *bor = NULL;
+
+    if(iniL != NULL){
+        if(iniL->valor == v){
+            bor = iniL;
+            iniL = iniL->sgte;
+            bor->sgte = NULL;
+            free(bor);
+            printf("\nEl elemento \"%d\" eliminado de la lista.\n", v);
+        } else {
+            iniL->sgte = borrarLL(v, iniL->sgte);
+        }
+    } else {
+        printf("\nEl elemento \"%d\" no esta en la lista.\n", v);
+    }
+    
+    return(iniL);
+}
+
 struct Lista *borrarLista(struct Lista *iniL)
 {
     struct Lista *aux = NULL;
@@ -325,4 +384,20 @@ struct Lista *borrarLista(struct Lista *iniL)
     }
 
     return(NULL);
+}
+
+// recursiva
+struct Lista *borrarListaL(struct Lista *iniL)
+{
+    struct Lista *bor = NULL;
+
+    if(iniL != NULL){
+        bor = iniL;
+        iniL->sgte = borrarListaL(iniL->sgte);
+        bor->sgte = NULL;
+        printf("\nEl elemento \"%d\" eliminado de la lista.\n", bor->valor);
+        free(bor);
+    }
+
+    return(iniL);
 }
