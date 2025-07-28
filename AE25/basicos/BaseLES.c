@@ -272,6 +272,7 @@ struct Lista *insertarLL(struct Lista *nv, struct Lista *iniL, int asc)
 
 void recorrerL(struct Lista *iniL)
 {
+    int n=1;
     if(iniL == NULL){
         printf("\n- LISTA VACIA -\n");
     } else {
@@ -280,8 +281,9 @@ void recorrerL(struct Lista *iniL)
 
         while (iniL != NULL)
         {
-            printf("%d\n", iniL->valor);
+            printf("%d) %d\n", n, iniL->valor);
             iniL = iniL->sgte;
+            n++;
         };
     }
 }
@@ -289,8 +291,10 @@ void recorrerL(struct Lista *iniL)
 // recursiva
 void recorrerLL(struct Lista *iniL)
 {
+    int n=1;
     if(iniL != NULL){
-        printf("%d\n", iniL->valor);
+        printf("%d) %d\n", n, iniL->valor);
+        n++;
         recorrerLL(iniL->sgte);
     }
 }
