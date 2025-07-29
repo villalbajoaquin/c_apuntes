@@ -52,20 +52,17 @@ int main()
             case 0: printf("\n- PROGRAMA FINALIZADO -\n"); break;
             case 1:
                 printf("\n1) RECURSIVA: Insertar un nodo a la lista.\n");
-
                 do
                 {
                     printf("\nIngrese el valor a insertar (0 para salir) ---> ");
                     scanf("%d", &v);
-
-                    nodo = (struct Lista *)malloc(sizeof(struct Lista));
-                    if(nodo != NULL){
-                        nodo->valor=v;
-                        nodo->sgte=NULL;
-                    }
-
                     if(v != 0){
-                        lista = insertarLL(nodo, lista);
+                        nodo = (struct Lista *)malloc(sizeof(struct Lista));
+                        if(nodo != NULL){
+                            nodo->valor=v;
+                            nodo->sgte=NULL;
+                            lista = insertarLL(nodo, lista);
+                        }
                     } else {
                         printf("\nCarga de elementos finalizada.\n");
                     }

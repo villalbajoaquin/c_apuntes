@@ -10,12 +10,13 @@ struct Cola
 int vaciaC(struct Cola *salida);
 void encolar(struct Cola **nodo, struct Cola **entrada, struct Cola **salida);
 void desencolar(struct Cola **nodo, struct Cola **entrada, struct Cola **salida);
-void recorrerC(struct Cola *salida);
+void recorrerC(struct Cola *entrada, struct Cola *salida);
 void buscarC(int valor, struct Cola *salida);
 void borrarC(int valor, struct Cola **entrada, struct Cola **salida);
 void eliminarC(struct Cola **entrada, struct Cola **salida);
 int contarC(struct Cola *salida);
 void maxminC(struct Cola *salida);
+void modificarC(int v, struct Cola **entrada, struct Cola **salida);
 
 int main()
 {
@@ -29,6 +30,7 @@ int main()
         printf("\n1- Insertar un nodo.\n2- Recorrer (Listar).\n3- Buscar un nodo.");
         printf("\n4- Eliminar un nodo.\n5- Eliminar todos los nodos de la cola.");
         printf("\n6- Contar nodos.\n7- Valor Minimo/Maximo.");
+        printf("\n8- Modificar nodo por posicion.\n");
         printf("\nIngrese una opcion: ");
         fflush(stdin);
         scanf("%d", &op);
@@ -60,7 +62,8 @@ int main()
                 if(vaciaC(salida)==0)
                 {
                     printf("\n2- Recorrer (Listar).\n");
-                    recorrerC(salida);
+                    printf("\n------------------------------------\n");
+                    recorrerC(entrada, salida);
                 } else {
                     printf("\nNo hay elementos en la cola para poder recorrerla.\n");
                 }
@@ -131,6 +134,28 @@ int main()
                     printf("\nNo hay elementos en la cola para poder recorrerla.\n");
                 }
                 break;
+            case 8:
+                if(vaciaC(salida)==0)
+                {
+                    printf("\n8- Modificar nodo por posicion.\n");
+                    do
+                    {
+                        printf("\n------------------------------------\n");
+                        recorrerC(entrada, salida);
+                        printf("------------------------------------\n");
+                        printf("\nIngrese la posicion del nodo a eliminar (0 para salir) ---> ");
+                        scanf("%d", &valor);
+                        
+                        if(valor != 0){
+                            modificarC(valor, &entrada, &salida);
+                        } else {
+                            printf("\nBorrado finalizado.\n");
+                        }
+                    } while(valor != 0);
+                } else {
+                    printf("\nNo hay elementos en la cola para poder recorrerla.\n");
+                }
+                break;
             default: printf("\nOpcion incorrecta, ingrese nuevamente.\n");
         }
 
@@ -176,14 +201,17 @@ void desencolar(struct Cola **nodo, struct Cola **entrada, struct Cola **salida)
     }
 }
 
-void recorrerC(struct Cola *salida)
+void recorrerC(struct Cola *entrada, struct Cola *salida)
 {
-    struct Cola *rc=salida;
+    struct Cola *eAux=NULL, *sAux=NULL, *nodo=NULL;
+    int n=1;
 
-    while(rc!=NULL)
+    while(vaciaC(salida)==0)
     {
-        printf("%d\n", rc->valor);
-        rc = rc->sgte;
+        desencolar(&nodo,&entrada,&salida);
+        printf("%d) %d\n", n, nodo->valor);
+        n++;
+        encolar(&nodo,&eAux,&sAux);
     }
 }
 
@@ -287,4 +315,33 @@ void maxminC(struct Cola *salida)
 
     printf("\nValor maximo encontrado en la cola: %d.\n", max);
     printf("\nValor minimo encontrado en la cola: %d.\n", min);
+}
+
+void modificarC(int v, struct Cola **entrada, struct Cola **salida)
+{
+    struct Cola *eAux=NULL, *sAux=NULL, *nodo=NULL;
+    int n=0, eu=0;
+
+    while(vaciaC(*salida)==0)
+    {
+        n++;
+        desencolar(&nodo,entrada,salida);
+        if(n==v)
+        {
+            eu=1;
+            printf("\nValor actual: %d\n",nodo->valor);
+            printf("\nIngrese nuevo valor: ");
+            scanf("%d", &(nodo->valor));
+        }
+        encolar(&nodo,&eAux,&sAux);
+    }
+    while(vaciaC(sAux)==0)
+    {
+        desencolar(&nodo,&eAux,&sAux);
+        encolar(&nodo,entrada,salida);
+    }
+    if(eu==0)
+    {
+        printf("\nNo se encontro el elemento nro. %d en la cola.\n", v);
+    }
 }
